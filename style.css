@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Camfortaa, sans-serif;
+}
+header{
+    position: fixed;
+    top: 2.5vw;
+    right: 2.5vw;
+    width: 95vw;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 0.4rem;
+    background-color: #E94F37;
+    color: white;
+    align-items: center;
+    z-index: 10;
+}
+header .logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+    font-family: 'Pacifico', cursive; 
+}
+nav ul{
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    gap: 1rem;
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+    font-variant: small-caps;
+}
+.top{
+    background-color: #122C34;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+ul.topList{
+    border-radius: 3px;
+    background-color: #E94F37;
+    list-style: none;
+    padding: 1rem;
+    width: 50%;
+}
+.topList .topList__title{
+    text-align: center;
+    color: #122C34;
+    margin-bottom: 1rem;
+    font-family: 'Pacifico', sans-serif;
+}
+.topList p{
+    color: #000000;
+    margin-bottom: 0.5rem;
+    line-height: 1.5rem;
+}
+.topList span{
+    color: white;
+    font-weight: 600;
+}
+.top .arrow-down{
+    position: absolute;
+    bottom: 1rem;
+}
+.arrow-down img{
+    width: 3rem;
+}
+.projects {
+    background-color: #7EB77F;
+    padding: 1rem;
+}
+.projects h2{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+    font-weight: 300;
+    font-family: 'Pacifico', sans-serif;
+}
+.project-list {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+.project-item {
+    border: solid 2px #c3bfba;
+    border-radius: 3px;
+    padding: 0.5rem;
+    display: grid;
+    gap: 0.2rem;
+    background-color: white;
+}
+.project-item__title {
+    color: #E94F37;
+    font-size: 1.1rem;
+}
+.project-item__description{
+    color: #000000;
+}
+.project-item__goToProject {
+    background-color: #E94F37;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.3rem;
+}
+.experience{
+    padding: 1rem;
+    background-color: #EEC584;
+}
+.experience h2{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    font-family: 'Pacifico', sans-serif;
+}
+.experience-list{
+    display: grid;
+    gap:1rem;
+    justify-items: center;
+}
+.experience-item{
+    display: grid;
+    grid-auto-flow: column;
+    background-color: #ede6e2;
+    gap: 1rem;
+    padding: 0.6rem;
+}
+.experience-item__title{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+footer{
+    background-color: #E94F37;
+    padding: 0.8rem;
+}
+.backToTop{
+    color: white;
+    text-decoration: none;
+    display: grid;
+    justify-items: center;
+}
